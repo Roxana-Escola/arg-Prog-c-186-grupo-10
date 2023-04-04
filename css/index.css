@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  padding: 2rem 1 rem;
+
+}
+
+
+
+
+
+
+/* Estilo del formulario */
+
+.title_form {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.form_div {
+  width: 60vw;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.label_name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.input_name,
+.btn_submit {
+  height: 3rem;
+}
