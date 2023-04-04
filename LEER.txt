@@ -1,0 +1,6 @@
+En el archivo .gitignore comente los 
+# *.html
+# *.html
+
+
+Apartentemente esto era lo que no nos dejaba subir los archivos.
