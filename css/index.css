@@ -21,7 +21,11 @@ body {
 
 
 
-/* Estilos del formulario */
+/* Estilos del formulario 
+
+NO MODIFICAR CLASES
+
+*/
 
 .title_form {
   text-align: center;
@@ -77,3 +81,20 @@ form {
 textarea {
   padding: 1rem;
 }                                                                                                             
+
+.input_name, 
+textarea {
+  border: 3px solid rgb(25, 135, 84);
+  box-shadow: 0 0 3px 0px black;
+  outline-color: gray
+} 
+
+.input_name:hover,
+textarea:hover {
+  border: 1px solid rgb(47,86,214);
+}
+
+
+
+
+
