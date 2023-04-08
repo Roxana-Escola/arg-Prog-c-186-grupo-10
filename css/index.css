@@ -16,7 +16,36 @@ body {
   box-sizing: content-box;
 }
 
+/* quienes somos */
 
+main h2 {
+  height: 35px; 
+  background-color: rgb(33, 124, 80);
+  padding: 0;
+  text-align: center;
+  }
+  
+  main h3 {
+    height: 35px;
+    background-color:rgb(79, 134, 107);
+    padding: 15px;
+    padding: 35px;
+    text-align: center;
+  }
+  
+  .profesionales {
+    display: flex;
+    box-sizing: border-box;
+    }
+  .profesionales img {
+    border-radius: 100%;
+  }
+  
+  .profesionales div h4 {
+    color: darkolivegreen;
+    font-size: 18px;
+  }
+  
 
 
 
