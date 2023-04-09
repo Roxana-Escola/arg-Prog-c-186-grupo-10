@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="../css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-   <link rel="icon" href="../img/icono empresa.ico">
+    <link rel="icon" href="../img/icono empresa.ico">
     <title>Arma Rodados srl - Presupuesto</title>
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+    <nav class="navbar navbar-expand-xl bg-success navbar-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
                 <img src="../img/Empresa Arma rodados srl.JPG" alt="Logo" style="width:150px;">
@@ -32,9 +32,6 @@
                         <a class="nav-link" href="./quienessomos.html">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="./presupuesto.html">Presupuesto</a>
                     </li>
                     <li class="nav-item">
@@ -50,9 +47,140 @@
     </nav>
 
     <nav>
-        <input type="button" onclick="history.back()" name="volver" value="Volver" class="my-2 mx-3 bg-info-subtle p-1 rounded">
+        <input type="button" onclick="history.back()" name="volver" value="Volver"
+            class="my-2 mx-3 bg-info-subtle p-1 rounded">
     </nav>
-    
+
+    <main>
+        <!-- formulario presupuesto -->
+        <div class="container">
+            <h2 class="mb-3 text-center" id="tit_presupuesto">PRESUPUESTO</h2>
+            <!-- <h2 class="title_form" -- class="display-2">Presupuesto</h1> -->
+            <section id="form_presupuesto" class="row">
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6"><!--<div class="col-12 form_div"> -->
+                    <form id="presupuesto1"> <!-- action="../datos.html target="_blank"" -->
+                        <fieldset>
+                            <div class="mb-3">
+                                <!-- form-label, form-control son clases de bootstrap -->
+                                <label for="fullname" class="form-label">Nombre</label>
+                                <input type="text" id="fullname" class="form-control"
+                                    placeholder="ingresa tu nombre"><!-- name="name_input" -->
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="tel" id="phone" class="form-control"
+                                    placeholder="número de teléfono"></input><!-- name="phone_input" -->
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" id="email" class="form-control" placeholder="ingresa tu correo"
+                                    aria-describedby="emailHelp"><!-- name="email_input" -->
+                                <div id="emailHelp" class="form-text">Nunca compartiremos su email con un tercero.</div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <!-- </div> -->
+
+
+                    <!-- presupuesto -->
+                    <form id="presupuesto2">
+                        <fieldset>
+                            <legend class="mb-3 text-center">MARCAR LO QUE CORRESPONDA</legend>
+                            <div class="form-check">
+                                <label class="form-check-label" for="check1">Paragolpe Delantero</label>
+                                <input type="checkbox" class="form-check-input" id="check1">
+                                <!-- name="option1" value="something" -->
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="check2">Parrilla</label>
+                                <input type="checkbox" class="form-check-input"
+                                    id="check2"><!-- name="option2" value="something" -->
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="check3">Capot</label>
+                                <input type="checkbox" class="form-check-input"
+                                    id="check3"><!-- name="option3" value="something" -->
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="check4">Puerta Delantera Derecha</label>
+                                <input type="checkbox" class="form-check-input"
+                                    id="check4"><!-- name="option4" value="something" -->
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="check5">Puerta Delantera Izquierda</label>
+                                <input type="checkbox" class="form-check-input"
+                                    id="check5"><!-- name="option5" value="something" -->
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="check6">Techo</label>
+                                <input type="checkbox" class="form-check-input"
+                                    id="check6"><!-- name="option6" value="something" -->
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="check7">Puerta Trasera Derecha</label>
+                                <input type="checkbox" class="form-check-input"
+                                    id="check7"><!-- name="option7" value="something" -->
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="check8">Puerta Trasera Izquierda</label>
+                                <input type="checkbox" class="form-check-input"
+                                    id="check8"><!-- name="option8" value="something" -->
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="check9">Guardabarro Delantero Derecho</label>
+                                <input type="checkbox" class="form-check-input"
+                                    id="check9"><!-- name="option9" value="something" -->
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="check10">Guardabarro Delantero
+                                    Izquierdo</label>
+                                <input type="checkbox" class="form-check-input"
+                                    id="check10"><!-- name="option10" value="something" -->
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="check11">Guardabarro Trasero Derecho</label>
+                                <input type="checkbox" class="form-check-input"
+                                    id="check11"><!-- name="option11" value="something" -->
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="check12">Guardabarro Trasero Izquierdo</label>
+                                <input type="checkbox" class="form-check-input"
+                                    id="check12"><!-- name="option12" value="something" -->
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="check13">Paragolpe Trasero</label>
+                                <input type="checkbox" class="form-check-input"
+                                    id="check13"><!-- name="option13" value="something" -->
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="check14">Baúl</label>
+                                <input type="checkbox" class="form-check-input"
+                                    id="check14"><!-- name="option14" value="something" -->
+                            </div>
+                        </fieldset>
+
+                        <div>
+                            <button type="reset" class="btn btn_reset px-3 mx-3"
+                                id="btn_borrar">Borrar</button><!-- value="borrar" -->
+                            <button type="submit" class="btn btn_submit px-3 mx-3"
+                                id="btn_enviar">Enviar</button><!-- value="enviar" -->
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- agrego el footer -->
+    <div class="container-fluid col-sm-12">
+        <footer>
+            <p>Designed by: Magdalena - Roxana - Ariel - Dario</p>
+        </footer>
+    </div>
+    <!-- fin del footer -->
 
     <script src="../js/index.js"></script>
 </body>
