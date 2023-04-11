@@ -13,7 +13,7 @@
     <title>Arma Rodados srl - Descuento</title>
 </head>
 <body>
-<br>
+
     <nav> <!--boton volver-->
         
         <input type="button" onclick="history.back()" name="volver" value="Volver"
@@ -22,16 +22,17 @@
 
 <!--Formulario de descuento de la pagina "Trabajos Realizados" (Roxana)  --  INICIO-->
     
-<div class="container mt-5">
-       
+<div class="container mt-2">
+           
     <div class="row">
         <div class="col-8 offset-2">
-            <form id="formDesc" class="p-3 mt-5 shadow border">
+            <form id="formDesc" class="p-3 mt-1 shadow border">
                 <h2 class="text-center text-success">Gracias por visitar nuestra página...</h2>
 
-                <input id="nombreDesc" class="form-control my-2" type="text" placeholder="ingrese su nombre y apellido">
-
-                <input id="dniDesc" class="form-control my-2" type="text" placeholder="ingrese su D.N.I.">
+                <label for="text">Nombre y apellido</label>
+                <input id="nombreDesc" class="form-control my-2" type="text" placeholder="ingrese sólo texto (mín. 5 caracteres)" required>
+                <label for="text">D.N.I.</label>
+                <input id="dniDesc" class="form-control my-2" type="text" placeholder="ingrese 7 u 8 dígitos sin puntos" required>
 
                 <button class="btn btn-success mt-2" type="submit">Obtener Descuento</button>
             </form>
