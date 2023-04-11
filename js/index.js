@@ -1,7 +1,3 @@
-/*
+import formularioContacto from "../js/contacto.js";
 
-
-    ACA VAN LAS FUNCIONES EXPORTADAS
-
-
-    */
+formularioContacto()
