@@ -164,9 +164,27 @@ textarea:hover {
 
 /* esto es del footer */
 footer {
-  text-align: center;
-  padding: 1rem;
-  margin: 1rem;
   background-color: rgb(25, 135, 84);
-  color: white;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul li {
+  padding: 0.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.767);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+footer ul li a {
+  color: rgba(255, 255, 255, 0.767);
+  text-decoration: none;
 }
