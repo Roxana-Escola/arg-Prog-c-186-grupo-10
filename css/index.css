@@ -16,39 +16,53 @@ body {
   box-sizing: content-box;
 }
 
+
 /* quienes somos */
 
+.in-flex {
+  flex: 2;
+  padding: 10px;
+  min-width: 250px;
+}
+
+.in-flex:first-child {
+  flex: 2;
+}
+
+.in-flex div {
+  padding: 15px;
+}
+
 main h2 {
-  height: 35px;
-  background-color: rgb(33, 124, 80);
-  padding: 0;
-  text-align: center;
+height: 35px; 
+background-color: rgb(33, 124, 80);
+padding: 0;
+text-align: center;
 }
 
 main h3 {
   height: 35px;
-  background-color: rgb(79, 134, 107);
+  background-color:rgb(79, 134, 107);
   padding: 15px;
   padding: 35px;
   text-align: center;
 }
 
+
 .profesionales {
   display: flex;
-  box-sizing: border-box;
-}
-
+  flex-wrap: wrap;
+  min-width: 200px;
+  }
+  
 .profesionales img {
   border-radius: 100%;
 }
 
-.profesionales div h4 {
+.profesionales div h5 {
   color: darkolivegreen;
   font-size: 18px;
 }
-
-
-
 
 
 /* Estilos del formulario 
