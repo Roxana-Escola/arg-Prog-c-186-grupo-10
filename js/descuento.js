@@ -31,8 +31,8 @@ function validarCampos(e){
 
 function validarformDesc(e){
     e.preventDefault();
-    const nombreDesc = document.querySelector("#nombreDesc").value
-    const dniDesc = document.querySelector("#dniDesc").value
+    const nombreDesc = document.querySelector("#nombreDesc").value;
+    const dniDesc = document.querySelector("#dniDesc").value;
 
     const respuesta = document.getElementById("respuesta");
     respuesta.textContent = `¡Felicitaciones ${nombreDesc} !  Ganaste un 5% de descuento en tu próximo servicio.  Sólo presentando tu dni nro: ${dniDesc} y nombrando el siguiente código: CUPON ${Math.random() * 100000000000000000}`
@@ -50,8 +50,8 @@ function generarPdf(e) {
     
 
 // primero tengo que obtener los valores de los campos del formulario
-const nombrePdf = document.querySelector("#nombreDesc").value
-const dniPdf = document.querySelector("#dniDesc").value
+const nombrePdf = document.querySelector("#nombreDesc").value;
+const dniPdf = document.querySelector("#dniDesc").value;
 
 // despues creo un nuevo documento PDF
 const formDescPdf = new jsPDF();
